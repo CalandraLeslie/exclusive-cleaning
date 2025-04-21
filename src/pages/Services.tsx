@@ -76,7 +76,7 @@ const Services = () => {
           {/* Premium Organizing */}
           <div className="service-item">
             <div className="service-image">
-              <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Premium Organizing" />
+              <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Professional Organizing Service" />
             </div>
             <div className="service-details">
               <h3>Premium Organizing</h3>
