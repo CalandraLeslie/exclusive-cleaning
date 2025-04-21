@@ -1,0 +1,234 @@
+/* Hero Section */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Services Overview */
+.services-overview {
+  background-color: var(--white);
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.services-overview h2 {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.service-card {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.service-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services-cta {
+  margin-top: 2rem;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+  background-color: var(--light-gray);
+  padding: 5rem 0;
+}
+
+.why-choose-us .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.choose-content h2 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.benefit h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: var(--deep-purple);
+}
+
+.choose-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.testimonials h2 {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+  text-align: left;
+}
+
+.quote {
+  font-size: 4rem;
+  color: var(--gold);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  opacity: 0.3;
+  font-family: Georgia, serif;
+}
+
+.testimonial-card p {
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+}
+
+.client strong {
+  color: var(--deep-purple);
+}
+
+.client span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Call To Action */
+.cta-section {
+  background-image: linear-gradient(rgba(75, 0, 130, 0.9), rgba(75, 0, 130, 0.9)), url('https://images.unsplash.com/photo-1565014099736-62dbfc3b0a6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.cta-content h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .why-choose-us .container {
+    grid-template-columns: 1fr;
+  }
+  
+  .choose-image {
+    order: -1;
+  }
+  
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 1rem;
+  }
+}
