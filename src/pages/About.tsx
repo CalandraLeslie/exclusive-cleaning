@@ -30,7 +30,7 @@ const About = () => {
       <section className="our-mission">
         <div className="container">
           <div className="mission-image">
-            <img src="https://images.unsplash.com/photo-1513828583688-c52142103b21?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Exclusive cleaning mission" />
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Exclusive cleaning mission" />
           </div>
           <div className="mission-content">
             <h2>Our <span className="gold-accent">Mission</span></h2>
