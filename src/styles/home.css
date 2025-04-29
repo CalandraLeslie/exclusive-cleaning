@@ -286,7 +286,7 @@ section {
 }
 
 .testimonial-card::before {
-  content: """;
+  content: "\201C";
   position: absolute;
   top: 10px;
   left: 20px;
