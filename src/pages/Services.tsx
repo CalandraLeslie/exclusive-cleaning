@@ -1,10 +1,20 @@
 import { Link } from 'react-router-dom';
 import '../styles/services.css';
 
+/**
+ * Services page component for the Exclusive Cleaning website
+ * Features detailed information about all available services including:
+ * - Service categories and descriptions
+ * - Pricing and scheduling options
+ * - Service features and benefits
+ * - Customization options
+ * 
+ * @returns {JSX.Element} Complete services page with detailed service listings
+ */
 const Services = () => {
   return (
     <div className="services-page">
-      {/* Services Header */}
+      {/* Services Page Header - Main title and introduction */}
       <section className="services-header">
         <div className="container">
           <h1>Our <span className="gold-accent">Services</span></h1>
@@ -12,7 +22,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Introduction */}
+      {/* Services Introduction - Overview of service philosophy */}
       <section className="services-intro">
         <div className="container">
           <div className="intro-content">
@@ -23,10 +33,10 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Service Categories */}
+      {/* Detailed Service Listings - Individual service categories with full descriptions */}
       <section className="service-list">
         <div className="container">
-          {/* Residential Cleaning */}
+          {/* Residential Cleaning Service - Core offering with detailed features */}
           <div className="service-item">
             <div className="service-image">
               <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Residential Cleaning" />
@@ -34,6 +44,7 @@ const Services = () => {
             <div className="service-details">
               <h3>Residential Cleaning</h3>
               <p>Our signature residential cleaning service transforms your home into an immaculate sanctuary. Our trained professionals meticulously attend to every surface with care and precision.</p>
+              {/* Detailed feature list for transparency and value demonstration */}
               <div className="service-features">
                 <ul>
                   <li>Thorough dusting of all surfaces and decorative items</li>
@@ -43,13 +54,14 @@ const Services = () => {
                   <li>Detailed attention to often-overlooked areas</li>
                 </ul>
               </div>
+              {/* Service scheduling options */}
               <div className="service-options">
                 <p><strong>Options:</strong> Weekly, Bi-weekly, Monthly, or One-time service</p>
               </div>
             </div>
           </div>
 
-          {/* Executive Home Care */}
+          {/* Executive Home Care Service - Enhanced offering for luxury residences */}
           <div className="service-item reverse">
             <div className="service-image">
               <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Executive Home Care" />
@@ -73,7 +85,7 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Premium Organizing */}
+          {/* Premium Organizing Service - Professional organizing for enhanced space utility */}
           <div className="service-item">
             <div className="service-image">
               <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Professional Organizing Service" />
@@ -96,7 +108,7 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Event Preparation */}
+          {/* Event Preparation Service - Cleaning and setup for special occasions */}
           <div className="service-item reverse">
             <div className="service-image">
               <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Event Preparation" />
@@ -119,7 +131,7 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Specialty Cleaning */}
+          {/* Specialty Cleaning Service - Expert cleaning for unique items and materials */}
           <div className="service-item">
             <div className="service-image">
               <img src="https://images.unsplash.com/photo-1493957988430-a5f2e15f39a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Specialty Cleaning" />
@@ -145,7 +157,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Our Process */}
+      {/* Our Process - Step-by-step overview of the service delivery process */}
       <section className="our-process">
         <div className="container">
           <h2>Our <span className="gold-accent">Process</span></h2>
@@ -184,7 +196,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Pricing Information */}
+      {/* Pricing Information - Explanation of the customized pricing model */}
       <section className="pricing-info">
         <div className="container">
           <h2>Customized <span className="gold-accent">Pricing</span></h2>

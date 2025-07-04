@@ -1,7 +1,14 @@
 {
+  // Root TypeScript configuration file for the Exclusive Cleaning project
+  // This file extends configurations from app and node-specific configs
+  
+  // No files are included at this level - using project references instead
   "files": [],
+  
+  // Project references allow for organized TypeScript compilation
+  // Separates application code from build tools and configuration
   "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+    { "path": "./tsconfig.app.json" },    // Application TypeScript configuration
+    { "path": "./tsconfig.node.json" }   // Node.js/build tools TypeScript configuration
   ]
 }

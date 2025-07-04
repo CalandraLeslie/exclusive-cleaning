@@ -1,9 +1,19 @@
 import '../styles/about.css';
 
+/**
+ * About page component for the Exclusive Cleaning website
+ * Contains comprehensive information about the company including:
+ * - Company story and founding
+ * - Mission and values
+ * - Team information and qualifications
+ * - Core values and principles
+ * 
+ * @returns {JSX.Element} Complete about page with company information
+ */
 const About = () => {
   return (
     <div className="about-page">
-      {/* Header Section */}
+      {/* Page Header Section - Introduction to the about page */}
       <section className="about-header">
         <div className="container">
           <h1>About <span className="gold-accent">Exclusive Cleaning</span></h1>
@@ -11,7 +21,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Story */}
+      {/* Company Origin Story Section - How the company was founded */}
       <section className="our-story">
         <div className="container">
           <div className="story-content">
@@ -20,15 +30,17 @@ const About = () => {
             <p>What started as a boutique service with a small team of handpicked professionals has grown into a respected name in luxury cleaning, while maintaining our commitment to personalized service and immaculate results.</p>
             <p>Today, we serve select clients throughout the region, bringing our signature attention to detail and white-glove service to homes that demand nothing but the best.</p>
           </div>
+          {/* Company founder/leadership image */}
           <div className="story-image">
             <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Exclusive Cleaning founder" />
           </div>
         </div>
       </section>
 
-      {/* Our Mission */}
+      {/* Company Mission Section - Purpose and values */}
       <section className="our-mission">
         <div className="container">
+          {/* Mission statement supporting image */}
           <div className="mission-image">
             <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Exclusive cleaning mission" />
           </div>
@@ -41,7 +53,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Team */}
+      {/* Team Information Section - Staff qualifications and training */}
       <section className="our-team">
         <div className="container">
           <h2>Our <span className="gold-accent">Team</span></h2>
@@ -83,7 +95,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Values */}
+      {/* Core Values Section - Company's principles and commitments */}
       <section className="our-values">
         <div className="container">
           <h2>Our <span className="gold-accent">Values</span></h2>

@@ -1,7 +1,20 @@
+// React hooks for state management
 import { useState } from 'react';
+// Component-specific styles
 import '../styles/contact.css';
 
+/**
+ * Contact page component for the Exclusive Cleaning website
+ * Features:
+ * - Contact form with validation and state management
+ * - Company contact information
+ * - Service request form with multiple service options
+ * - Business hours and location details
+ * 
+ * @returns {JSX.Element} Complete contact page with form and company information
+ */
 const Contact = () => {
+  // Form state management - stores all form field values
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -10,6 +23,12 @@ const Contact = () => {
     message: ''
   });
 
+  /**
+   * Handles input changes for all form fields
+   * Updates the corresponding field in the formData state
+   * 
+   * @param {React.ChangeEvent} e - Input change event from form fields
+   */
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -18,11 +37,19 @@ const Contact = () => {
     }));
   };
 
+  /**
+   * Handles form submission
+   * In a production environment, this would send data to a backend API
+   * Currently shows success message and resets form
+   * 
+   * @param {React.FormEvent} e - Form submission event
+   */
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // In a real implementation, you would handle form submission to your backend
     console.log('Form submitted:', formData);
     alert('Thank you for contacting Exclusive Cleaning. We will be in touch shortly.');
+    // Reset form to initial state after submission
     setFormData({
       name: '',
       email: '',
@@ -34,7 +61,7 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      {/* Contact Header */}
+      {/* Contact Page Header - Title and introduction */}
       <section className="contact-header">
         <div className="container">
           <h1>Contact <span className="gold-accent">Us</span></h1>
@@ -42,10 +69,11 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Contact Content */}
+      {/* Main Contact Content - Form and company information */}
       <section className="contact-content">
         <div className="container">
           <div className="contact-grid">
+            {/* Left side: Contact information and details */}
             <div className="contact-info">
               <h2>Get in <span className="gold-accent">Touch</span></h2>
               <p>We're here to answer any questions about our exclusive cleaning services and how we can tailor them to your specific needs.</p>
@@ -87,6 +115,7 @@ const Contact = () => {
               </div>
             </div>
             
+            {/* Right side: Contact form */}
             <div className="contact-form-container">
               <h2>Request a <span className="gold-accent">Consultation</span></h2>
               <p>Fill out the form below, and one of our representatives will contact you to discuss your specific cleaning needs.</p>
@@ -165,7 +194,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
+      {/* Map Section - Location details */}
       <section className="map-section">
         <div className="container">
           <h2>Our <span className="gold-accent">Location</span></h2>
@@ -176,7 +205,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ Section - Common questions and answers */}
       <section className="faq-section">
         <div className="container">
           <h2>Frequently Asked <span className="gold-accent">Questions</span></h2>
